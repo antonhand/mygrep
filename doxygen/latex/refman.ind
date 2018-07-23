@@ -1,0 +1,128 @@
+\begin{theindex}
+
+  \item {alternate}
+    \subitem {Mygrep}, \hyperpage{7}
+
+  \indexspace
+
+  \item {C\+L\+O\+S\+E\+\_\+\+B\+R\+A\+C\+E}
+    \subitem {Lexem}, \hyperpage{5}
+  \item {check}
+    \subitem {Mygrep}, \hyperpage{7, 8}
+  \item {check\+\_\+next}
+    \subitem {Mygrep}, \hyperpage{8}
+
+  \indexspace
+
+  \item {E\+N\+D}
+    \subitem {Lexem}, \hyperpage{5}
+
+  \indexspace
+
+  \item {get\+\_\+internal}
+    \subitem {Syntax}, \hyperpage{14}
+  \item {get\+\_\+lex}
+    \subitem {Lex}, \hyperpage{3}
+
+  \indexspace
+
+  \item {I\+T\+E\+R}
+    \subitem {Lexem}, \hyperpage{5}
+  \item {I\+T\+E\+R\+\_\+\+N\+\_\+\+M}
+    \subitem {Lexem}, \hyperpage{5}
+  \item {isoper}
+    \subitem {Lex}, \hyperpage{3}
+  \item {isterm}
+    \subitem {Lex}, \hyperpage{3}
+  \item {iter}
+    \subitem {Mygrep}, \hyperpage{9}
+  \item {iter\+\_\+n\+\_\+m}
+    \subitem {Mygrep}, \hyperpage{9}
+
+  \indexspace
+
+  \item {L\+A\+Z\+Y\+\_\+\+I\+T\+E\+R}
+    \subitem {Lexem}, \hyperpage{5}
+  \item {Lex}, \hyperpage{2}
+    \subitem {get\+\_\+lex}, \hyperpage{3}
+    \subitem {isoper}, \hyperpage{3}
+    \subitem {isterm}, \hyperpage{3}
+    \subitem {Lex}, \hyperpage{2}
+    \subitem {possible\+\_\+op}, \hyperpage{4}
+  \item {Lexem}, \hyperpage{4}
+    \subitem {C\+L\+O\+S\+E\+\_\+\+B\+R\+A\+C\+E}, \hyperpage{5}
+    \subitem {E\+N\+D}, \hyperpage{5}
+    \subitem {I\+T\+E\+R}, \hyperpage{5}
+    \subitem {I\+T\+E\+R\+\_\+\+N\+\_\+\+M}, \hyperpage{5}
+    \subitem {L\+A\+Z\+Y\+\_\+\+I\+T\+E\+R}, \hyperpage{5}
+    \subitem {Lexem}, \hyperpage{5}
+    \subitem {lexem\+\_\+types}, \hyperpage{5}
+    \subitem {O\+P\+E\+N\+\_\+\+B\+R\+A\+C\+E}, \hyperpage{5}
+    \subitem {O\+R}, \hyperpage{5}
+    \subitem {T\+E\+R\+M\+I\+N\+A\+L}, \hyperpage{5}
+  \item {lexem\+\_\+types}
+    \subitem {Lexem}, \hyperpage{5}
+  \item {lexic.\+cpp}, \hyperpage{15}
+  \item {lexic.\+h}, \hyperpage{16}
+
+  \indexspace
+
+  \item {Mygrep}, \hyperpage{6}
+    \subitem {alternate}, \hyperpage{7}
+    \subitem {check}, \hyperpage{7, 8}
+    \subitem {check\+\_\+next}, \hyperpage{8}
+    \subitem {iter}, \hyperpage{9}
+    \subitem {iter\+\_\+n\+\_\+m}, \hyperpage{9}
+    \subitem {Mygrep}, \hyperpage{7}
+    \subitem {search}, \hyperpage{10}
+    \subitem {selector}, \hyperpage{10}
+    \subitem {terminal}, \hyperpage{11}
+  \item {mygrep.\+cpp}, \hyperpage{17}
+  \item {mygrep.\+h}, \hyperpage{18}
+
+  \indexspace
+
+  \item {O}
+    \subitem {Syntax}, \hyperpage{14}
+  \item {O\+P\+E\+N\+\_\+\+B\+R\+A\+C\+E}
+    \subitem {Lexem}, \hyperpage{5}
+  \item {O\+R}
+    \subitem {Lexem}, \hyperpage{5}
+
+  \indexspace
+
+  \item {possible\+\_\+op}
+    \subitem {Lex}, \hyperpage{4}
+  \item {print}
+    \subitem {Syn\+\_\+lexem}, \hyperpage{12}
+
+  \indexspace
+
+  \item {S}
+    \subitem {Syntax}, \hyperpage{14}
+  \item {S1}
+    \subitem {Syntax}, \hyperpage{15}
+  \item {search}
+    \subitem {Mygrep}, \hyperpage{10}
+  \item {selector}
+    \subitem {Mygrep}, \hyperpage{10}
+  \item {Syn\+\_\+lexem}, \hyperpage{11}
+    \subitem {print}, \hyperpage{12}
+    \subitem {Syn\+\_\+lexem}, \hyperpage{12}
+  \item {Syntax}, \hyperpage{12}
+    \subitem {get\+\_\+internal}, \hyperpage{14}
+    \subitem {O}, \hyperpage{14}
+    \subitem {S}, \hyperpage{14}
+    \subitem {S1}, \hyperpage{15}
+    \subitem {Syntax}, \hyperpage{14}
+  \item {syntax.\+cpp}, \hyperpage{20}
+  \item {syntax.\+h}, \hyperpage{20}
+
+  \indexspace
+
+  \item {T\+E\+R\+M\+I\+N\+A\+L}
+    \subitem {Lexem}, \hyperpage{5}
+  \item {terminal}
+    \subitem {Mygrep}, \hyperpage{11}
+
+\end{theindex}

@@ -1,0 +1,191 @@
+\hypertarget{class_syntax}{}\subsection{Класс Syntax}
+\label{class_syntax}\index{Syntax@{Syntax}}
+
+
+Синтаксический анализатор  
+
+
+
+
+{\ttfamily \#include $<$syntax.\+h$>$}
+
+
+
+Граф связей класса Syntax\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=176pt]{class_syntax__coll__graph}
+\end{center}
+\end{figure}
+\subsubsection*{Закрытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_syntax_a5139d8fddfa05e199bf12b8ef7bd3620}{}void \hyperlink{class_syntax_a5139d8fddfa05e199bf12b8ef7bd3620}{gl} ()\label{class_syntax_a5139d8fddfa05e199bf12b8ef7bd3620}
+
+\begin{DoxyCompactList}\small\item\em Функция, получающая из лексического анализатора очередную лексему и записывающая её в переменную cur. \end{DoxyCompactList}\item 
+\hyperlink{class_syntax_a52bc44b52e3dceea48a1e71f65d5e3cf}{Syntax} (const string \&reg)
+\begin{DoxyCompactList}\small\item\em Конструктор от строки с регулярным выражением. \end{DoxyCompactList}\item 
+vector$<$ \hyperlink{class_syn__lexem}{Syn\+\_\+lexem} $>$ \hyperlink{class_syntax_a61442ccace7e6d58205cc2988bd5391b}{get\+\_\+internal} ()
+\begin{DoxyCompactList}\small\item\em Функция, возвращающая внутреннее представление \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{Indent}{\bf Функции РС-\/метода}\par
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_syntax_af5d09263aadaa0b9a264ebf436beb9e8}{S} ()
+\begin{DoxyCompactList}\small\item\em Начальное состояние \end{DoxyCompactList}\item 
+vector$<$ \hyperlink{class_syn__lexem}{Syn\+\_\+lexem} $>$ \hyperlink{class_syntax_ad3bf45fadc4d20146f0a6c85d970d714}{S1} (bool concat=false)
+\begin{DoxyCompactList}\small\item\em Основное состояние \end{DoxyCompactList}\item 
+vector$<$ \hyperlink{class_syn__lexem}{Syn\+\_\+lexem} $>$ \hyperlink{class_syntax_a4ed2d9c690da119299e6e74fc9332f16}{O} (vector$<$ \hyperlink{class_syn__lexem}{Syn\+\_\+lexem} $>$ \&operand)
+\begin{DoxyCompactList}\small\item\em Состояние поиска унарного оператора \end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+\subsubsection*{Закрытые данные}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_syntax_afa60cc2342d74dbdbb8679ee1677b8e1}{}\hyperlink{class_lex}{Lex} \hyperlink{class_syntax_afa60cc2342d74dbdbb8679ee1677b8e1}{scan}\label{class_syntax_afa60cc2342d74dbdbb8679ee1677b8e1}
+
+\begin{DoxyCompactList}\small\item\em Лексический анализатор \end{DoxyCompactList}\item 
+\hypertarget{class_syntax_a18d0feb830951877fef2692ea77f931b}{}\hyperlink{class_lexem}{Lexem} \hyperlink{class_syntax_a18d0feb830951877fef2692ea77f931b}{cur}\label{class_syntax_a18d0feb830951877fef2692ea77f931b}
+
+\begin{DoxyCompactList}\small\item\em Текущая лексема \end{DoxyCompactList}\item 
+\hypertarget{class_syntax_a2337e4b3bc2ff71bddf65ca7461c012c}{}int \hyperlink{class_syntax_a2337e4b3bc2ff71bddf65ca7461c012c}{countbrace} = 0\label{class_syntax_a2337e4b3bc2ff71bddf65ca7461c012c}
+
+\begin{DoxyCompactList}\small\item\em Счётчик скобок \end{DoxyCompactList}\item 
+\hypertarget{class_syntax_ae2ce745407fa89c47376e82bc208162e}{}vector$<$ \hyperlink{class_syn__lexem}{Syn\+\_\+lexem} $>$ \hyperlink{class_syntax_ae2ce745407fa89c47376e82bc208162e}{internal}\label{class_syntax_ae2ce745407fa89c47376e82bc208162e}
+
+\begin{DoxyCompactList}\small\item\em Внутреннее представление выражения \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Друзья}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_syntax_a90fdb1ff12233c504810e346b5f6e49f}{}class {\bfseries Mygrep}\label{class_syntax_a90fdb1ff12233c504810e346b5f6e49f}
+
+\end{DoxyCompactItemize}
+
+
+\subsubsection{Подробное описание}
+Синтаксический анализатор 
+
+Синтаксический анализатор проверяет последовательность типизированных лексем на соответствии грамматике языка регулярных выражений и переводит последотельность во внутреннее представление (последовательность синтаксических лексем) 
+
+\subsubsection{Конструктор(ы)}
+\hypertarget{class_syntax_a52bc44b52e3dceea48a1e71f65d5e3cf}{}\index{Syntax@{Syntax}!Syntax@{Syntax}}
+\index{Syntax@{Syntax}!Syntax@{Syntax}}
+\paragraph[{Syntax(const string \&reg)}]{\setlength{\rightskip}{0pt plus 5cm}Syntax\+::\+Syntax (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{reg}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [explicit]}, {\ttfamily [private]}}\label{class_syntax_a52bc44b52e3dceea48a1e71f65d5e3cf}
+
+
+Конструктор от строки с регулярным выражением. 
+
+Сделан явным, поскольку неясен смысл выражения вида \hyperlink{class_syntax}{Syntax} c = \char`\"{}a$\ast$\char`\"{}; 
+
+Граф вызовов\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_syntax_a52bc44b52e3dceea48a1e71f65d5e3cf_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsubsection{Методы}
+\hypertarget{class_syntax_a61442ccace7e6d58205cc2988bd5391b}{}\index{Syntax@{Syntax}!get\+\_\+internal@{get\+\_\+internal}}
+\index{get\+\_\+internal@{get\+\_\+internal}!Syntax@{Syntax}}
+\paragraph[{get\+\_\+internal()}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$ {\bf Syn\+\_\+lexem} $>$ Syntax\+::get\+\_\+internal (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{class_syntax_a61442ccace7e6d58205cc2988bd5391b}
+
+
+Функция, возвращающая внутреннее представление 
+
+\begin{DoxyReturn}{Возвращает}
+Возвращают сгенерированное внутреннего представления выражения 
+\end{DoxyReturn}
+\hypertarget{class_syntax_a4ed2d9c690da119299e6e74fc9332f16}{}\index{Syntax@{Syntax}!O@{O}}
+\index{O@{O}!Syntax@{Syntax}}
+\paragraph[{O(vector$<$ Syn\+\_\+lexem $>$ \&operand)}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$ {\bf Syn\+\_\+lexem} $>$ Syntax\+::\+O (
+\begin{DoxyParamCaption}
+\item[{vector$<$ {\bf Syn\+\_\+lexem} $>$ \&}]{operand}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{class_syntax_a4ed2d9c690da119299e6e74fc9332f16}
+
+
+Состояние поиска унарного оператора 
+
+\begin{DoxyReturn}{Возвращает}
+Возвращают сгенерированную подпоследовательность внутреннего представления 
+\end{DoxyReturn}
+
+
+Граф вызовов\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=344pt]{class_syntax_a4ed2d9c690da119299e6e74fc9332f16_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_syntax_af5d09263aadaa0b9a264ebf436beb9e8}{}\index{Syntax@{Syntax}!S@{S}}
+\index{S@{S}!Syntax@{Syntax}}
+\paragraph[{S()}]{\setlength{\rightskip}{0pt plus 5cm}void Syntax\+::\+S (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{class_syntax_af5d09263aadaa0b9a264ebf436beb9e8}
+
+
+Начальное состояние 
+
+Либо обнаруживает пустую последовательность, либо переходит в состояние S1 
+
+Граф вызовов\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_syntax_af5d09263aadaa0b9a264ebf436beb9e8_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_syntax_ad3bf45fadc4d20146f0a6c85d970d714}{}\index{Syntax@{Syntax}!S1@{S1}}
+\index{S1@{S1}!Syntax@{Syntax}}
+\paragraph[{S1(bool concat=false)}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$ {\bf Syn\+\_\+lexem} $>$ Syntax\+::\+S1 (
+\begin{DoxyParamCaption}
+\item[{bool}]{concat = {\ttfamily false}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{class_syntax_ad3bf45fadc4d20146f0a6c85d970d714}
+
+
+Основное состояние 
+
+\begin{DoxyReturn}{Возвращает}
+Возвращают сгенерированную подпоследовательность внутреннего представления 
+\end{DoxyReturn}
+
+
+Граф вызовов\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_syntax_ad3bf45fadc4d20146f0a6c85d970d714_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{syntax_8h}{syntax.\+h}\item 
+\hyperlink{syntax_8cpp}{syntax.\+cpp}\end{DoxyCompactItemize}

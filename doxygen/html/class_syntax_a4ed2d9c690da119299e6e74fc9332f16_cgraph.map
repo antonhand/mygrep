@@ -1,0 +1,4 @@
+<map id="Syntax::O" name="Syntax::O">
+<area shape="rect" id="node2" href="$class_syntax.html#a5139d8fddfa05e199bf12b8ef7bd3620" title="Функция, получающая из лексического анализатора очередную лексему и записывающая её в переменную cur..." alt="" coords="135,5,216,32"/>
+<area shape="rect" id="node3" href="$class_lex.html#a38b6e95d1a98fd656ee932d34018a0aa" title="Функция, последовательно возвращающая лексемы " alt="" coords="264,5,357,32"/>
+</map>

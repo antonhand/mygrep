@@ -1,0 +1,658 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.10"/>
+<title>mygrep: Класс Mygrep</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="Эмблема ВМК.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">mygrep
+   </div>
+   <div id="projectbrief">Автор: Антон Ханджян, 205 группа ВМК МГУ</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.10 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Титульная&#160;страница</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Классы</span></a></li>
+      <li><a href="files.html"><span>Файлы</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>Классы</span></a></li>
+      <li><a href="classes.html"><span>Алфавитный&#160;указатель&#160;классов</span></a></li>
+      <li><a href="functions.html"><span>Члены&#160;классов</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('class_mygrep.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="#pri-types">Закрытые типы</a> &#124;
+<a href="#pri-methods">Закрытые члены</a> &#124;
+<a href="#pri-attribs">Закрытые данные</a> &#124;
+<a href="class_mygrep-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle">
+<div class="title">Класс Mygrep</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Обработчик регулярных выражений  
+ <a href="class_mygrep.html#details">Подробнее...</a></p>
+
+<p><code>#include &lt;<a class="el" href="mygrep_8h_source.html">mygrep.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:aa2d9dfde7904f2232e6327249f4cd295"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mygrep.html#aa2d9dfde7904f2232e6327249f4cd295">Mygrep</a> (const string &amp;reg)</td></tr>
+<tr class="memdesc:aa2d9dfde7904f2232e6327249f4cd295"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор от строки с регулярным выражением.  <a href="#aa2d9dfde7904f2232e6327249f4cd295">Подробнее...</a><br /></td></tr>
+<tr class="separator:aa2d9dfde7904f2232e6327249f4cd295"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17b4256c97b2e7e875d50bdc9985ef51"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mygrep.html#a17b4256c97b2e7e875d50bdc9985ef51">check</a> (const string &amp;s, bool forsearch=false)</td></tr>
+<tr class="memdesc:a17b4256c97b2e7e875d50bdc9985ef51"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция сравнения с регулярным выражением  <a href="#a17b4256c97b2e7e875d50bdc9985ef51">Подробнее...</a><br /></td></tr>
+<tr class="separator:a17b4256c97b2e7e875d50bdc9985ef51"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a684ae4e33ce76c8de17b5eadf987afe9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mygrep.html#a684ae4e33ce76c8de17b5eadf987afe9">check</a> (vector&lt; <a class="el" href="class_syn__lexem.html">Syn_lexem</a> &gt; &amp;v)</td></tr>
+<tr class="memdesc:a684ae4e33ce76c8de17b5eadf987afe9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция проверки подвыражения  <a href="#a684ae4e33ce76c8de17b5eadf987afe9">Подробнее...</a><br /></td></tr>
+<tr class="separator:a684ae4e33ce76c8de17b5eadf987afe9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e4671ac445156bbbcd4f685d61871a5"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mygrep.html#a3e4671ac445156bbbcd4f685d61871a5">search</a> (const string &amp;s)</td></tr>
+<tr class="memdesc:a3e4671ac445156bbbcd4f685d61871a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция поиска подстроки, соответствующей регулярному выражению  <a href="#a3e4671ac445156bbbcd4f685d61871a5">Подробнее...</a><br /></td></tr>
+<tr class="separator:a3e4671ac445156bbbcd4f685d61871a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd79a246feab0fe7548c79b9d887803d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mygrep.html#abd79a246feab0fe7548c79b9d887803d">check_next</a> ()</td></tr>
+<tr class="memdesc:abd79a246feab0fe7548c79b9d887803d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверка следующего  <a href="#abd79a246feab0fe7548c79b9d887803d">Подробнее...</a><br /></td></tr>
+<tr class="separator:abd79a246feab0fe7548c79b9d887803d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-types"></a>
+Закрытые типы</h2></td></tr>
+<tr class="memitem:ab095dfb9624dcc11dc8b51399d15f429"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab095dfb9624dcc11dc8b51399d15f429"></a>
+typedef vector&lt; <a class="el" href="class_syn__lexem.html">Syn_lexem</a> &gt;::iterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mygrep.html#ab095dfb9624dcc11dc8b51399d15f429">intern_iterator</a></td></tr>
+<tr class="memdesc:ab095dfb9624dcc11dc8b51399d15f429"><td class="mdescLeft">&#160;</td><td class="mdescRight">Итератор, указывающий на текущее положение во внутреннем представлении <br /></td></tr>
+<tr class="separator:ab095dfb9624dcc11dc8b51399d15f429"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Закрытые члены</h2></td></tr>
+<tr class="memitem:ac4293787424bbfe7be6d2585a5f40e9f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mygrep.html#ac4293787424bbfe7be6d2585a5f40e9f">selector</a> ()</td></tr>
+<tr class="memdesc:ac4293787424bbfe7be6d2585a5f40e9f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция выбора операции  <a href="#ac4293787424bbfe7be6d2585a5f40e9f">Подробнее...</a><br /></td></tr>
+<tr class="separator:ac4293787424bbfe7be6d2585a5f40e9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2ead57bb55a8e3625401169a9b693a7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mygrep.html#ae2ead57bb55a8e3625401169a9b693a7">Mygrep</a> (vector&lt; <a class="el" href="class_syn__lexem.html">Syn_lexem</a> &gt; &amp;v)</td></tr>
+<tr class="memdesc:ae2ead57bb55a8e3625401169a9b693a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор от вектора лексем  <a href="#ae2ead57bb55a8e3625401169a9b693a7">Подробнее...</a><br /></td></tr>
+<tr class="separator:ae2ead57bb55a8e3625401169a9b693a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">Функции-обработчики операций</div></td></tr>
+<tr class="memitem:ad893ffcdb0252a2724e5679bf24eeff7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mygrep.html#ad893ffcdb0252a2724e5679bf24eeff7">iter</a> (bool lazy=false)</td></tr>
+<tr class="memdesc:ad893ffcdb0252a2724e5679bf24eeff7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Итерация  <a href="#ad893ffcdb0252a2724e5679bf24eeff7">Подробнее...</a><br /></td></tr>
+<tr class="separator:ad893ffcdb0252a2724e5679bf24eeff7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac52eb295fdae462e39016b0e69bd75bc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mygrep.html#ac52eb295fdae462e39016b0e69bd75bc">iter_n_m</a> (int n, int m)</td></tr>
+<tr class="memdesc:ac52eb295fdae462e39016b0e69bd75bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Итерация от n до m раз  <a href="#ac52eb295fdae462e39016b0e69bd75bc">Подробнее...</a><br /></td></tr>
+<tr class="separator:ac52eb295fdae462e39016b0e69bd75bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e3ee4dc08c04520c4b2af313cf6f9a3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mygrep.html#a0e3ee4dc08c04520c4b2af313cf6f9a3">terminal</a> ()</td></tr>
+<tr class="memdesc:a0e3ee4dc08c04520c4b2af313cf6f9a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Терминал  <a href="#a0e3ee4dc08c04520c4b2af313cf6f9a3">Подробнее...</a><br /></td></tr>
+<tr class="separator:a0e3ee4dc08c04520c4b2af313cf6f9a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43b5b9e7e2d0ccbee7f5ec0115f53952"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mygrep.html#a43b5b9e7e2d0ccbee7f5ec0115f53952">alternate</a> ()</td></tr>
+<tr class="memdesc:a43b5b9e7e2d0ccbee7f5ec0115f53952"><td class="mdescLeft">&#160;</td><td class="mdescRight">Перечисление  <a href="#a43b5b9e7e2d0ccbee7f5ec0115f53952">Подробнее...</a><br /></td></tr>
+<tr class="separator:a43b5b9e7e2d0ccbee7f5ec0115f53952"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Закрытые данные</h2></td></tr>
+<tr class="memitem:ae33c6f986c7fdcc1a92a4fe041a333b8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae33c6f986c7fdcc1a92a4fe041a333b8"></a>
+vector&lt; <a class="el" href="class_syn__lexem.html">Syn_lexem</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mygrep.html#ae33c6f986c7fdcc1a92a4fe041a333b8">internal</a></td></tr>
+<tr class="memdesc:ae33c6f986c7fdcc1a92a4fe041a333b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Внутреннее представление регулярного выражения <br /></td></tr>
+<tr class="separator:ae33c6f986c7fdcc1a92a4fe041a333b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7109fb756258cb50b8c3920a55ff6b80"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7109fb756258cb50b8c3920a55ff6b80"></a>
+<a class="el" href="class_mygrep.html#ab095dfb9624dcc11dc8b51399d15f429">intern_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mygrep.html#a7109fb756258cb50b8c3920a55ff6b80">internal_it</a></td></tr>
+<tr class="memdesc:a7109fb756258cb50b8c3920a55ff6b80"><td class="mdescLeft">&#160;</td><td class="mdescRight">Итератор текущего положения в регулярном выражении <br /></td></tr>
+<tr class="separator:a7109fb756258cb50b8c3920a55ff6b80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a116ceb6b78f1ea12fb5ba0b0d00dedd7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a116ceb6b78f1ea12fb5ba0b0d00dedd7"></a>
+string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mygrep.html#a116ceb6b78f1ea12fb5ba0b0d00dedd7">inp</a></td></tr>
+<tr class="memdesc:a116ceb6b78f1ea12fb5ba0b0d00dedd7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Входная строка <br /></td></tr>
+<tr class="separator:a116ceb6b78f1ea12fb5ba0b0d00dedd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a218804650aa95ac793b34d444821033b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a218804650aa95ac793b34d444821033b"></a>
+size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mygrep.html#a218804650aa95ac793b34d444821033b">inp_pos</a> = 0</td></tr>
+<tr class="memdesc:a218804650aa95ac793b34d444821033b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Позиция во входной строке <br /></td></tr>
+<tr class="separator:a218804650aa95ac793b34d444821033b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15c0407904f221e633c756c2f0c4d454"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a15c0407904f221e633c756c2f0c4d454"></a>
+vector&lt; <a class="el" href="class_syn__lexem.html">Syn_lexem</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mygrep.html#a15c0407904f221e633c756c2f0c4d454">v_next</a></td></tr>
+<tr class="memdesc:a15c0407904f221e633c756c2f0c4d454"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вектор синтаксических лексем, следующих за текущей проверяемой лексемой <br /></td></tr>
+<tr class="separator:a15c0407904f221e633c756c2f0c4d454"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56163b4ca84bd60abedf506b916a3b58"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a56163b4ca84bd60abedf506b916a3b58"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mygrep.html#a56163b4ca84bd60abedf506b916a3b58">issearch</a> = false</td></tr>
+<tr class="memdesc:a56163b4ca84bd60abedf506b916a3b58"><td class="mdescLeft">&#160;</td><td class="mdescRight">Признак режима работы: сравнение или поиск подстроки <br /></td></tr>
+<tr class="separator:a56163b4ca84bd60abedf506b916a3b58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Обработчик регулярных выражений </p>
+<p>Проверяет строки на соответствие регулярному выражению либо ищет первое вхождение подстроки, удовлетворяющей регулярному выражению </p>
+</div><h2 class="groupheader">Конструктор(ы)</h2>
+<a class="anchor" id="ae2ead57bb55a8e3625401169a9b693a7"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Mygrep::Mygrep </td>
+          <td>(</td>
+          <td class="paramtype">vector&lt; <a class="el" href="class_syn__lexem.html">Syn_lexem</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>v</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Конструктор от вектора лексем </p>
+<p>Сделан явным, поскольку неясен смысл выражения вида <a class="el" href="class_mygrep.html" title="Обработчик регулярных выражений ">Mygrep</a> c = "a*"; </p>
+
+</div>
+</div>
+<a class="anchor" id="aa2d9dfde7904f2232e6327249f4cd295"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Mygrep::Mygrep </td>
+          <td>(</td>
+          <td class="paramtype">const string &amp;&#160;</td>
+          <td class="paramname"><em>reg</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Конструктор от строки с регулярным выражением. </p>
+<p>Сделан явным, поскольку неясен смысл выражения вида <a class="el" href="class_mygrep.html" title="Обработчик регулярных выражений ">Mygrep</a> c = "a*"; </p>
+
+<p><div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_mygrep_aa2d9dfde7904f2232e6327249f4cd295_cgraph.png" border="0" usemap="#class_mygrep_aa2d9dfde7904f2232e6327249f4cd295_cgraph" alt=""/></div>
+<map name="class_mygrep_aa2d9dfde7904f2232e6327249f4cd295_cgraph" id="class_mygrep_aa2d9dfde7904f2232e6327249f4cd295_cgraph">
+<area shape="rect" id="node2" href="class_syntax.html#a61442ccace7e6d58205cc2988bd5391b" title="Функция, возвращающая внутреннее представление " alt="" coords="169,5,308,32"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<h2 class="groupheader">Методы</h2>
+<a class="anchor" id="a43b5b9e7e2d0ccbee7f5ec0115f53952"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Mygrep::alternate </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Перечисление </p>
+<p>Выполняет проверку соответствия входной строки одному из двух выражений-операндов </p><dl class="section return"><dt>Возвращает</dt><dd>true, если соответствует одному из выражений, false, если ни одному из выражений не соответствует </dd></dl>
+
+<p><div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_mygrep_a43b5b9e7e2d0ccbee7f5ec0115f53952_cgraph.png" border="0" usemap="#class_mygrep_a43b5b9e7e2d0ccbee7f5ec0115f53952_cgraph" alt=""/></div>
+<map name="class_mygrep_a43b5b9e7e2d0ccbee7f5ec0115f53952_cgraph" id="class_mygrep_a43b5b9e7e2d0ccbee7f5ec0115f53952_cgraph">
+<area shape="rect" id="node2" href="class_mygrep.html#a17b4256c97b2e7e875d50bdc9985ef51" title="Функция сравнения с регулярным выражением " alt="" coords="176,101,284,128"/>
+<area shape="rect" id="node5" href="class_mygrep.html#abd79a246feab0fe7548c79b9d887803d" title="Проверка следующего " alt="" coords="669,126,809,153"/>
+<area shape="rect" id="node3" href="class_mygrep.html#ac4293787424bbfe7be6d2585a5f40e9f" title="Функция выбора операции " alt="" coords="332,50,451,77"/>
+<area shape="rect" id="node4" href="class_mygrep.html#ad893ffcdb0252a2724e5679bf24eeff7" title="Итерация " alt="" coords="515,152,605,178"/>
+<area shape="rect" id="node6" href="class_mygrep.html#ac52eb295fdae462e39016b0e69bd75bc" title="Итерация от n до m раз " alt="" coords="499,101,621,128"/>
+<area shape="rect" id="node7" href="class_mygrep.html#a0e3ee4dc08c04520c4b2af313cf6f9a3" title="Терминал " alt="" coords="501,50,619,77"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a17b4256c97b2e7e875d50bdc9985ef51"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Mygrep::check </td>
+          <td>(</td>
+          <td class="paramtype">const string &amp;&#160;</td>
+          <td class="paramname"><em>s</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>forsearch</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Функция сравнения с регулярным выражением </p>
+<p>Проверяет, соответствует ли строка регулярному выражению</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">s</td><td>Строка для проверки </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">forsearch</td><td>Признак того, что проверка выполняется для функции search </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>true, если строка соответствует регулярному выражению, false — иначе </dd></dl>
+
+<p><div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_mygrep_a17b4256c97b2e7e875d50bdc9985ef51_cgraph.png" border="0" usemap="#class_mygrep_a17b4256c97b2e7e875d50bdc9985ef51_cgraph" alt=""/></div>
+<map name="class_mygrep_a17b4256c97b2e7e875d50bdc9985ef51_cgraph" id="class_mygrep_a17b4256c97b2e7e875d50bdc9985ef51_cgraph">
+<area shape="rect" id="node2" href="class_mygrep.html#ac4293787424bbfe7be6d2585a5f40e9f" title="Функция выбора операции " alt="" coords="161,87,280,114"/>
+<area shape="rect" id="node3" href="class_mygrep.html#ad893ffcdb0252a2724e5679bf24eeff7" title="Итерация " alt="" coords="344,188,435,215"/>
+<area shape="rect" id="node5" href="class_mygrep.html#ac52eb295fdae462e39016b0e69bd75bc" title="Итерация от n до m раз " alt="" coords="328,36,451,63"/>
+<area shape="rect" id="node6" href="class_mygrep.html#a0e3ee4dc08c04520c4b2af313cf6f9a3" title="Терминал " alt="" coords="330,87,449,114"/>
+<area shape="rect" id="node7" href="class_mygrep.html#a43b5b9e7e2d0ccbee7f5ec0115f53952" title="Перечисление " alt="" coords="328,138,451,164"/>
+<area shape="rect" id="node4" href="class_mygrep.html#abd79a246feab0fe7548c79b9d887803d" title="Проверка следующего " alt="" coords="499,87,639,114"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a684ae4e33ce76c8de17b5eadf987afe9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Mygrep::check </td>
+          <td>(</td>
+          <td class="paramtype">vector&lt; <a class="el" href="class_syn__lexem.html">Syn_lexem</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>v</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Функция проверки подвыражения </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">v</td><td>Вектор лексем для проверки </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>true, если строка соответствует регулярному выражению, false — иначе </dd></dl>
+
+<p><div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_mygrep_a684ae4e33ce76c8de17b5eadf987afe9_cgraph.png" border="0" usemap="#class_mygrep_a684ae4e33ce76c8de17b5eadf987afe9_cgraph" alt=""/></div>
+<map name="class_mygrep_a684ae4e33ce76c8de17b5eadf987afe9_cgraph" id="class_mygrep_a684ae4e33ce76c8de17b5eadf987afe9_cgraph">
+<area shape="rect" id="node2" href="class_mygrep.html#ac4293787424bbfe7be6d2585a5f40e9f" title="Функция выбора операции " alt="" coords="161,88,280,115"/>
+<area shape="rect" id="node3" href="class_mygrep.html#ad893ffcdb0252a2724e5679bf24eeff7" title="Итерация " alt="" coords="344,38,435,64"/>
+<area shape="rect" id="node6" href="class_mygrep.html#ac52eb295fdae462e39016b0e69bd75bc" title="Итерация от n до m раз " alt="" coords="328,88,451,115"/>
+<area shape="rect" id="node7" href="class_mygrep.html#a0e3ee4dc08c04520c4b2af313cf6f9a3" title="Терминал " alt="" coords="330,190,449,216"/>
+<area shape="rect" id="node8" href="class_mygrep.html#a43b5b9e7e2d0ccbee7f5ec0115f53952" title="Перечисление " alt="" coords="328,139,451,166"/>
+<area shape="rect" id="node4" href="class_mygrep.html#a17b4256c97b2e7e875d50bdc9985ef51" title="Функция сравнения с регулярным выражением " alt="" coords="687,88,795,115"/>
+<area shape="rect" id="node5" href="class_mygrep.html#abd79a246feab0fe7548c79b9d887803d" title="Проверка следующего " alt="" coords="499,139,639,166"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="abd79a246feab0fe7548c79b9d887803d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Mygrep::check_next </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Проверка следующего </p>
+<dl class="section return"><dt>Возвращает</dt><dd>true, если строка соответствует следующим лексемам, false — иначе </dd></dl>
+
+<p><div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_mygrep_abd79a246feab0fe7548c79b9d887803d_cgraph.png" border="0" usemap="#class_mygrep_abd79a246feab0fe7548c79b9d887803d_cgraph" alt=""/></div>
+<map name="class_mygrep_abd79a246feab0fe7548c79b9d887803d_cgraph" id="class_mygrep_abd79a246feab0fe7548c79b9d887803d_cgraph">
+<area shape="rect" id="node2" href="class_mygrep.html#a17b4256c97b2e7e875d50bdc9985ef51" title="Функция сравнения с регулярным выражением " alt="" coords="193,137,301,164"/>
+<area shape="rect" id="node3" href="class_mygrep.html#ac4293787424bbfe7be6d2585a5f40e9f" title="Функция выбора операции " alt="" coords="349,188,468,214"/>
+<area shape="rect" id="node4" href="class_mygrep.html#ad893ffcdb0252a2724e5679bf24eeff7" title="Итерация " alt="" coords="532,137,623,164"/>
+<area shape="rect" id="node5" href="class_mygrep.html#ac52eb295fdae462e39016b0e69bd75bc" title="Итерация от n до m раз " alt="" coords="516,86,639,113"/>
+<area shape="rect" id="node6" href="class_mygrep.html#a0e3ee4dc08c04520c4b2af313cf6f9a3" title="Терминал " alt="" coords="518,188,637,214"/>
+<area shape="rect" id="node7" href="class_mygrep.html#a43b5b9e7e2d0ccbee7f5ec0115f53952" title="Перечисление " alt="" coords="516,238,639,265"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ad893ffcdb0252a2724e5679bf24eeff7"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Mygrep::iter </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>lazy</em> = <code>false</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Итерация </p>
+<p>Выполняет итерирацию выражения. В режими поиска подстроки выбирает вариант наибольшего количества итераций </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">lazy</td><td>Признок ленивости иттерации </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_mygrep_ad893ffcdb0252a2724e5679bf24eeff7_cgraph.png" border="0" usemap="#class_mygrep_ad893ffcdb0252a2724e5679bf24eeff7_cgraph" alt=""/></div>
+<map name="class_mygrep_ad893ffcdb0252a2724e5679bf24eeff7_cgraph" id="class_mygrep_ad893ffcdb0252a2724e5679bf24eeff7_cgraph">
+<area shape="rect" id="node2" href="class_mygrep.html#a17b4256c97b2e7e875d50bdc9985ef51" title="Функция сравнения с регулярным выражением " alt="" coords="144,100,252,127"/>
+<area shape="rect" id="node5" href="class_mygrep.html#abd79a246feab0fe7548c79b9d887803d" title="Проверка следующего " alt="" coords="637,125,777,152"/>
+<area shape="rect" id="node3" href="class_mygrep.html#ac4293787424bbfe7be6d2585a5f40e9f" title="Функция выбора операции " alt="" coords="300,49,419,76"/>
+<area shape="rect" id="node4" href="class_mygrep.html#ac52eb295fdae462e39016b0e69bd75bc" title="Итерация от n до m раз " alt="" coords="467,151,589,177"/>
+<area shape="rect" id="node6" href="class_mygrep.html#a0e3ee4dc08c04520c4b2af313cf6f9a3" title="Терминал " alt="" coords="469,49,587,76"/>
+<area shape="rect" id="node7" href="class_mygrep.html#a43b5b9e7e2d0ccbee7f5ec0115f53952" title="Перечисление " alt="" coords="467,100,589,127"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ac52eb295fdae462e39016b0e69bd75bc"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Mygrep::iter_n_m </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>m</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Итерация от n до m раз </p>
+<p>Выполняет проверку наличия выражения n раз и выполняет итерацию дополнительно до, возможно, m-того раза </p><dl class="section return"><dt>Возвращает</dt><dd>true, если выражение повторяется хотя бы n раз, false — иначе </dd></dl>
+
+<p><div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_mygrep_ac52eb295fdae462e39016b0e69bd75bc_cgraph.png" border="0" usemap="#class_mygrep_ac52eb295fdae462e39016b0e69bd75bc_cgraph" alt=""/></div>
+<map name="class_mygrep_ac52eb295fdae462e39016b0e69bd75bc_cgraph" id="class_mygrep_ac52eb295fdae462e39016b0e69bd75bc_cgraph">
+<area shape="rect" id="node2" href="class_mygrep.html#a17b4256c97b2e7e875d50bdc9985ef51" title="Функция сравнения с регулярным выражением " alt="" coords="176,101,284,128"/>
+<area shape="rect" id="node5" href="class_mygrep.html#abd79a246feab0fe7548c79b9d887803d" title="Проверка следующего " alt="" coords="669,126,809,153"/>
+<area shape="rect" id="node3" href="class_mygrep.html#ac4293787424bbfe7be6d2585a5f40e9f" title="Функция выбора операции " alt="" coords="332,50,451,77"/>
+<area shape="rect" id="node4" href="class_mygrep.html#ad893ffcdb0252a2724e5679bf24eeff7" title="Итерация " alt="" coords="515,152,605,178"/>
+<area shape="rect" id="node6" href="class_mygrep.html#a0e3ee4dc08c04520c4b2af313cf6f9a3" title="Терминал " alt="" coords="501,50,619,77"/>
+<area shape="rect" id="node7" href="class_mygrep.html#a43b5b9e7e2d0ccbee7f5ec0115f53952" title="Перечисление " alt="" coords="499,101,621,128"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a3e4671ac445156bbbcd4f685d61871a5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string Mygrep::search </td>
+          <td>(</td>
+          <td class="paramtype">const string &amp;&#160;</td>
+          <td class="paramname"><em>s</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Функция поиска подстроки, соответствующей регулярному выражению </p>
+<p>Ищет первое вхождение подстроки, соответствующей регулярному выражению</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">s</td><td>Строка для поиска </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Возвращает подстроку, соответствующую регулярному выражению, либо " " (пробел), если подстрока не найдена </dd></dl>
+
+<p><div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_mygrep_a3e4671ac445156bbbcd4f685d61871a5_cgraph.png" border="0" usemap="#class_mygrep_a3e4671ac445156bbbcd4f685d61871a5_cgraph" alt=""/></div>
+<map name="class_mygrep_a3e4671ac445156bbbcd4f685d61871a5_cgraph" id="class_mygrep_a3e4671ac445156bbbcd4f685d61871a5_cgraph">
+<area shape="rect" id="node2" href="class_mygrep.html#a17b4256c97b2e7e875d50bdc9985ef51" title="Функция сравнения с регулярным выражением " alt="" coords="165,87,273,114"/>
+<area shape="rect" id="node3" href="class_mygrep.html#ac4293787424bbfe7be6d2585a5f40e9f" title="Функция выбора операции " alt="" coords="321,87,440,114"/>
+<area shape="rect" id="node4" href="class_mygrep.html#ad893ffcdb0252a2724e5679bf24eeff7" title="Итерация " alt="" coords="504,188,595,215"/>
+<area shape="rect" id="node6" href="class_mygrep.html#ac52eb295fdae462e39016b0e69bd75bc" title="Итерация от n до m раз " alt="" coords="488,36,611,63"/>
+<area shape="rect" id="node7" href="class_mygrep.html#a0e3ee4dc08c04520c4b2af313cf6f9a3" title="Терминал " alt="" coords="490,87,609,114"/>
+<area shape="rect" id="node8" href="class_mygrep.html#a43b5b9e7e2d0ccbee7f5ec0115f53952" title="Перечисление " alt="" coords="488,138,611,164"/>
+<area shape="rect" id="node5" href="class_mygrep.html#abd79a246feab0fe7548c79b9d887803d" title="Проверка следующего " alt="" coords="659,87,799,114"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ac4293787424bbfe7be6d2585a5f40e9f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Mygrep::selector </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Функция выбора операции </p>
+<p>Вызывает функцию, соответствующую текущей лексеме </p><dl class="section return"><dt>Возвращает</dt><dd>Возвращает значение вызванной ей функции либо true, если вызывалась неограниченная итерация </dd></dl>
+
+<p><div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_mygrep_ac4293787424bbfe7be6d2585a5f40e9f_cgraph.png" border="0" usemap="#class_mygrep_ac4293787424bbfe7be6d2585a5f40e9f_cgraph" alt=""/></div>
+<map name="class_mygrep_ac4293787424bbfe7be6d2585a5f40e9f_cgraph" id="class_mygrep_ac4293787424bbfe7be6d2585a5f40e9f_cgraph">
+<area shape="rect" id="node2" href="class_mygrep.html#ad893ffcdb0252a2724e5679bf24eeff7" title="Итерация " alt="" coords="188,38,279,64"/>
+<area shape="rect" id="node5" href="class_mygrep.html#ac52eb295fdae462e39016b0e69bd75bc" title="Итерация от n до m раз " alt="" coords="172,88,295,115"/>
+<area shape="rect" id="node6" href="class_mygrep.html#a0e3ee4dc08c04520c4b2af313cf6f9a3" title="Терминал " alt="" coords="174,190,293,216"/>
+<area shape="rect" id="node7" href="class_mygrep.html#a43b5b9e7e2d0ccbee7f5ec0115f53952" title="Перечисление " alt="" coords="172,139,295,166"/>
+<area shape="rect" id="node3" href="class_mygrep.html#a17b4256c97b2e7e875d50bdc9985ef51" title="Функция сравнения с регулярным выражением " alt="" coords="531,88,639,115"/>
+<area shape="rect" id="node4" href="class_mygrep.html#abd79a246feab0fe7548c79b9d887803d" title="Проверка следующего " alt="" coords="343,139,483,166"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a0e3ee4dc08c04520c4b2af313cf6f9a3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Mygrep::terminal </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Терминал </p>
+<p>Выполняет проверку наличия необходимой терминальной последовательности на позиции входной строки, анализируемой в данный момент </p><dl class="section return"><dt>Возвращает</dt><dd>true, если терминальная последовательность обнаружена, false — иначе </dd></dl>
+
+</div>
+</div>
+<hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<li><a class="el" href="mygrep_8h_source.html">mygrep.h</a></li>
+<li><a class="el" href="mygrep_8cpp.html">mygrep.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_mygrep.html">Mygrep</a></li>
+    <li class="footer">Документация по mygrep. Последние изменения: Ср 18 Май 2016 04:38:17. Создано системой
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
+  </ul>
+</div>
+</body>
+</html>

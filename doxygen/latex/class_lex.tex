@@ -1,0 +1,175 @@
+\hypertarget{class_lex}{}\subsection{Класс Lex}
+\label{class_lex}\index{Lex@{Lex}}
+
+
+Лексический анализатор  
+
+
+
+
+{\ttfamily \#include $<$lexic.\+h$>$}
+
+\subsubsection*{Закрытые члены}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{class_lex_a3b9276570c7b49bb53f646419fdc1cbf}{isoper} (char ch)
+\begin{DoxyCompactList}\small\item\em Функция, проверяющая является ли символ оператором \end{DoxyCompactList}\item 
+bool \hyperlink{class_lex_a8649a6722fbdc0eb2b331901e959e2d6}{isterm} (char ch)
+\begin{DoxyCompactList}\small\item\em Функция, проверяющая является ли символ терминальным \end{DoxyCompactList}\item 
+\hyperlink{class_lex_a2d9cafe03428afbced68bb4581357114}{Lex} (const string \&reg)
+\begin{DoxyCompactList}\small\item\em Конструктор от строки с регулярным выражением. \end{DoxyCompactList}\item 
+\hyperlink{class_lexem}{Lexem} \hyperlink{class_lex_a38b6e95d1a98fd656ee932d34018a0aa}{get\+\_\+lex} ()
+\begin{DoxyCompactList}\small\item\em Функция, последовательно возвращающая лексемы \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Закрытые данные}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_lex_a1a29de7eb28089a8d88922fc06ad322d}{}vector$<$ \hyperlink{class_lexem}{Lexem} $>$ \hyperlink{class_lex_a1a29de7eb28089a8d88922fc06ad322d}{lexems}\label{class_lex_a1a29de7eb28089a8d88922fc06ad322d}
+
+\begin{DoxyCompactList}\small\item\em Вектор, в который записывается последовательность лексем, эквивалентная исходному регулярному выражению \end{DoxyCompactList}\item 
+\hypertarget{class_lex_ab6d830f1859bbb9a6d18ba0751f43255}{}unsigned \hyperlink{class_lex_ab6d830f1859bbb9a6d18ba0751f43255}{cur} = 0\label{class_lex_ab6d830f1859bbb9a6d18ba0751f43255}
+
+\begin{DoxyCompactList}\small\item\em Текущая позиция в векторе lexems (для функции \hyperlink{class_lex_a38b6e95d1a98fd656ee932d34018a0aa}{get\+\_\+lex()}) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Закрытые статические данные}
+\begin{DoxyCompactItemize}
+\item 
+static char \hyperlink{class_lex_ad87b6f7104bb60dee3cf0c196b5b46cd}{possible\+\_\+op} \mbox{[}$\,$\mbox{]}
+\begin{DoxyCompactList}\small\item\em служебный массив символов, имеющих значение операций \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Друзья}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_lex_a13fb68a36cac69480f7fd4b3900594f9}{}class {\bfseries Syntax}\label{class_lex_a13fb68a36cac69480f7fd4b3900594f9}
+
+\end{DoxyCompactItemize}
+
+
+\subsubsection{Подробное описание}
+Лексический анализатор 
+
+Лексический анализатор преобразует исходную строку в последовательность типизированных лексем и проверяет правильность экранирования символов и написания многосимвольных операторов 
+
+\subsubsection{Конструктор(ы)}
+\hypertarget{class_lex_a2d9cafe03428afbced68bb4581357114}{}\index{Lex@{Lex}!Lex@{Lex}}
+\index{Lex@{Lex}!Lex@{Lex}}
+\paragraph[{Lex(const string \&reg)}]{\setlength{\rightskip}{0pt plus 5cm}Lex\+::\+Lex (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{reg}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [explicit]}, {\ttfamily [private]}}\label{class_lex_a2d9cafe03428afbced68bb4581357114}
+
+
+Конструктор от строки с регулярным выражением. 
+
+Сделан явным, поскольку неясен смысл выражения вида \hyperlink{class_lex}{Lex} c = \char`\"{}a$\ast$\char`\"{}; 
+
+Граф вызовов\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=336pt]{class_lex_a2d9cafe03428afbced68bb4581357114_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsubsection{Методы}
+\hypertarget{class_lex_a38b6e95d1a98fd656ee932d34018a0aa}{}\index{Lex@{Lex}!get\+\_\+lex@{get\+\_\+lex}}
+\index{get\+\_\+lex@{get\+\_\+lex}!Lex@{Lex}}
+\paragraph[{get\+\_\+lex()}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Lexem} Lex\+::get\+\_\+lex (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{class_lex_a38b6e95d1a98fd656ee932d34018a0aa}
+
+
+Функция, последовательно возвращающая лексемы 
+
+\begin{DoxyReturn}{Возвращает}
+Возвращает очередную лексему 
+\end{DoxyReturn}
+\hypertarget{class_lex_a3b9276570c7b49bb53f646419fdc1cbf}{}\index{Lex@{Lex}!isoper@{isoper}}
+\index{isoper@{isoper}!Lex@{Lex}}
+\paragraph[{isoper(char ch)}]{\setlength{\rightskip}{0pt plus 5cm}bool Lex\+::isoper (
+\begin{DoxyParamCaption}
+\item[{char}]{ch}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{class_lex_a3b9276570c7b49bb53f646419fdc1cbf}
+
+
+Функция, проверяющая является ли символ оператором 
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\tt in}  & {\em ch} & Символ для проверки \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+true, если символ является оператором, false — иначе 
+\end{DoxyReturn}
+\hypertarget{class_lex_a8649a6722fbdc0eb2b331901e959e2d6}{}\index{Lex@{Lex}!isterm@{isterm}}
+\index{isterm@{isterm}!Lex@{Lex}}
+\paragraph[{isterm(char ch)}]{\setlength{\rightskip}{0pt plus 5cm}bool Lex\+::isterm (
+\begin{DoxyParamCaption}
+\item[{char}]{ch}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{class_lex_a8649a6722fbdc0eb2b331901e959e2d6}
+
+
+Функция, проверяющая является ли символ терминальным 
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\tt in}  & {\em ch} & Символ для проверки \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+{\bfseries true}, если символ является терминальным, false — иначе 
+\end{DoxyReturn}
+
+
+Граф вызовов\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=246pt]{class_lex_a8649a6722fbdc0eb2b331901e959e2d6_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsubsection{Данные класса}
+\hypertarget{class_lex_ad87b6f7104bb60dee3cf0c196b5b46cd}{}\index{Lex@{Lex}!possible\+\_\+op@{possible\+\_\+op}}
+\index{possible\+\_\+op@{possible\+\_\+op}!Lex@{Lex}}
+\paragraph[{possible\+\_\+op}]{\setlength{\rightskip}{0pt plus 5cm}char Lex\+::possible\+\_\+op\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{class_lex_ad87b6f7104bb60dee3cf0c196b5b46cd}
+{\bfseries Инициализатор}
+\begin{DoxyCode}
+=
+\{
+    \textcolor{charliteral}{'*'},
+    \textcolor{charliteral}{'|'},
+    \textcolor{charliteral}{'('},
+    \textcolor{charliteral}{')'},
+    \textcolor{charliteral}{'+'},
+    \textcolor{charliteral}{'?'},
+    \textcolor{charliteral}{'\{'},
+    \textcolor{charliteral}{'\}'},
+    \textcolor{charliteral}{'['},
+    \textcolor{charliteral}{']'},
+    \textcolor{charliteral}{'-'},
+    \textcolor{charliteral}{'\(\backslash\)\(\backslash\)'},
+    0
+\}
+\end{DoxyCode}
+
+
+служебный массив символов, имеющих значение операций 
+
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{lexic_8h}{lexic.\+h}\item 
+\hyperlink{lexic_8cpp}{lexic.\+cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,362 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.10"/>
+<title>mygrep: Класс Lex</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="Эмблема ВМК.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">mygrep
+   </div>
+   <div id="projectbrief">Автор: Антон Ханджян, 205 группа ВМК МГУ</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.10 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Титульная&#160;страница</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Классы</span></a></li>
+      <li><a href="files.html"><span>Файлы</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>Классы</span></a></li>
+      <li><a href="classes.html"><span>Алфавитный&#160;указатель&#160;классов</span></a></li>
+      <li><a href="functions.html"><span>Члены&#160;классов</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('class_lex.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pri-methods">Закрытые члены</a> &#124;
+<a href="#pri-attribs">Закрытые данные</a> &#124;
+<a href="#pri-static-attribs">Закрытые статические данные</a> &#124;
+<a href="#friends">Друзья</a> &#124;
+<a href="class_lex-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle">
+<div class="title">Класс Lex</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Лексический анализатор  
+ <a href="class_lex.html#details">Подробнее...</a></p>
+
+<p><code>#include &lt;<a class="el" href="lexic_8h_source.html">lexic.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Закрытые члены</h2></td></tr>
+<tr class="memitem:a3b9276570c7b49bb53f646419fdc1cbf"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lex.html#a3b9276570c7b49bb53f646419fdc1cbf">isoper</a> (char ch)</td></tr>
+<tr class="memdesc:a3b9276570c7b49bb53f646419fdc1cbf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция, проверяющая является ли символ оператором  <a href="#a3b9276570c7b49bb53f646419fdc1cbf">Подробнее...</a><br /></td></tr>
+<tr class="separator:a3b9276570c7b49bb53f646419fdc1cbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8649a6722fbdc0eb2b331901e959e2d6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lex.html#a8649a6722fbdc0eb2b331901e959e2d6">isterm</a> (char ch)</td></tr>
+<tr class="memdesc:a8649a6722fbdc0eb2b331901e959e2d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция, проверяющая является ли символ терминальным  <a href="#a8649a6722fbdc0eb2b331901e959e2d6">Подробнее...</a><br /></td></tr>
+<tr class="separator:a8649a6722fbdc0eb2b331901e959e2d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d9cafe03428afbced68bb4581357114"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lex.html#a2d9cafe03428afbced68bb4581357114">Lex</a> (const string &amp;reg)</td></tr>
+<tr class="memdesc:a2d9cafe03428afbced68bb4581357114"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор от строки с регулярным выражением.  <a href="#a2d9cafe03428afbced68bb4581357114">Подробнее...</a><br /></td></tr>
+<tr class="separator:a2d9cafe03428afbced68bb4581357114"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38b6e95d1a98fd656ee932d34018a0aa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_lexem.html">Lexem</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lex.html#a38b6e95d1a98fd656ee932d34018a0aa">get_lex</a> ()</td></tr>
+<tr class="memdesc:a38b6e95d1a98fd656ee932d34018a0aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция, последовательно возвращающая лексемы  <a href="#a38b6e95d1a98fd656ee932d34018a0aa">Подробнее...</a><br /></td></tr>
+<tr class="separator:a38b6e95d1a98fd656ee932d34018a0aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Закрытые данные</h2></td></tr>
+<tr class="memitem:a1a29de7eb28089a8d88922fc06ad322d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1a29de7eb28089a8d88922fc06ad322d"></a>
+vector&lt; <a class="el" href="class_lexem.html">Lexem</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lex.html#a1a29de7eb28089a8d88922fc06ad322d">lexems</a></td></tr>
+<tr class="memdesc:a1a29de7eb28089a8d88922fc06ad322d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вектор, в который записывается последовательность лексем, эквивалентная исходному регулярному выражению <br /></td></tr>
+<tr class="separator:a1a29de7eb28089a8d88922fc06ad322d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6d830f1859bbb9a6d18ba0751f43255"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab6d830f1859bbb9a6d18ba0751f43255"></a>
+unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lex.html#ab6d830f1859bbb9a6d18ba0751f43255">cur</a> = 0</td></tr>
+<tr class="memdesc:ab6d830f1859bbb9a6d18ba0751f43255"><td class="mdescLeft">&#160;</td><td class="mdescRight">Текущая позиция в векторе lexems (для функции <a class="el" href="class_lex.html#a38b6e95d1a98fd656ee932d34018a0aa" title="Функция, последовательно возвращающая лексемы ">get_lex()</a>) <br /></td></tr>
+<tr class="separator:ab6d830f1859bbb9a6d18ba0751f43255"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
+Закрытые статические данные</h2></td></tr>
+<tr class="memitem:ad87b6f7104bb60dee3cf0c196b5b46cd"><td class="memItemLeft" align="right" valign="top">static char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lex.html#ad87b6f7104bb60dee3cf0c196b5b46cd">possible_op</a> []</td></tr>
+<tr class="memdesc:ad87b6f7104bb60dee3cf0c196b5b46cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">служебный массив символов, имеющих значение операций  <a href="#ad87b6f7104bb60dee3cf0c196b5b46cd">Подробнее...</a><br /></td></tr>
+<tr class="separator:ad87b6f7104bb60dee3cf0c196b5b46cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
+Друзья</h2></td></tr>
+<tr class="memitem:a13fb68a36cac69480f7fd4b3900594f9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a13fb68a36cac69480f7fd4b3900594f9"></a>
+class&#160;</td><td class="memItemRight" valign="bottom"><b>Syntax</b></td></tr>
+<tr class="separator:a13fb68a36cac69480f7fd4b3900594f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Лексический анализатор </p>
+<p>Лексический анализатор преобразует исходную строку в последовательность типизированных лексем и проверяет правильность экранирования символов и написания многосимвольных операторов </p>
+</div><h2 class="groupheader">Конструктор(ы)</h2>
+<a class="anchor" id="a2d9cafe03428afbced68bb4581357114"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Lex::Lex </td>
+          <td>(</td>
+          <td class="paramtype">const string &amp;&#160;</td>
+          <td class="paramname"><em>reg</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Конструктор от строки с регулярным выражением. </p>
+<p>Сделан явным, поскольку неясен смысл выражения вида <a class="el" href="class_lex.html" title="Лексический анализатор ">Lex</a> c = "a*"; </p>
+
+<p><div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_lex_a2d9cafe03428afbced68bb4581357114_cgraph.png" border="0" usemap="#class_lex_a2d9cafe03428afbced68bb4581357114_cgraph" alt=""/></div>
+<map name="class_lex_a2d9cafe03428afbced68bb4581357114_cgraph" id="class_lex_a2d9cafe03428afbced68bb4581357114_cgraph">
+<area shape="rect" id="node2" href="class_lex.html#a3b9276570c7b49bb53f646419fdc1cbf" title="Функция, проверяющая является ли символ оператором " alt="" coords="260,5,347,32"/>
+<area shape="rect" id="node3" href="class_lex.html#a8649a6722fbdc0eb2b331901e959e2d6" title="Функция, проверяющая является ли символ терминальным " alt="" coords="125,31,212,57"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<h2 class="groupheader">Методы</h2>
+<a class="anchor" id="a38b6e95d1a98fd656ee932d34018a0aa"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_lexem.html">Lexem</a> Lex::get_lex </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Функция, последовательно возвращающая лексемы </p>
+<dl class="section return"><dt>Возвращает</dt><dd>Возвращает очередную лексему </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a3b9276570c7b49bb53f646419fdc1cbf"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Lex::isoper </td>
+          <td>(</td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>ch</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Функция, проверяющая является ли символ оператором </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">ch</td><td>Символ для проверки </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>true, если символ является оператором, false — иначе </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a8649a6722fbdc0eb2b331901e959e2d6"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Lex::isterm </td>
+          <td>(</td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>ch</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Функция, проверяющая является ли символ терминальным </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">ch</td><td>Символ для проверки </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd><b>true</b>, если символ является терминальным, false — иначе </dd></dl>
+
+<p><div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_lex_a8649a6722fbdc0eb2b331901e959e2d6_cgraph.png" border="0" usemap="#class_lex_a8649a6722fbdc0eb2b331901e959e2d6_cgraph" alt=""/></div>
+<map name="class_lex_a8649a6722fbdc0eb2b331901e959e2d6_cgraph" id="class_lex_a8649a6722fbdc0eb2b331901e959e2d6_cgraph">
+<area shape="rect" id="node2" href="class_lex.html#a3b9276570c7b49bb53f646419fdc1cbf" title="Функция, проверяющая является ли символ оператором " alt="" coords="140,5,227,32"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<h2 class="groupheader">Данные класса</h2>
+<a class="anchor" id="ad87b6f7104bb60dee3cf0c196b5b46cd"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">char Lex::possible_op</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Инициализатор</b><div class="fragment"><div class="line">=</div>
+<div class="line">{</div>
+<div class="line">    <span class="charliteral">&#39;*&#39;</span>,</div>
+<div class="line">    <span class="charliteral">&#39;|&#39;</span>,</div>
+<div class="line">    <span class="charliteral">&#39;(&#39;</span>,</div>
+<div class="line">    <span class="charliteral">&#39;)&#39;</span>,</div>
+<div class="line">    <span class="charliteral">&#39;+&#39;</span>,</div>
+<div class="line">    <span class="charliteral">&#39;?&#39;</span>,</div>
+<div class="line">    <span class="charliteral">&#39;{&#39;</span>,</div>
+<div class="line">    <span class="charliteral">&#39;}&#39;</span>,</div>
+<div class="line">    <span class="charliteral">&#39;[&#39;</span>,</div>
+<div class="line">    <span class="charliteral">&#39;]&#39;</span>,</div>
+<div class="line">    <span class="charliteral">&#39;-&#39;</span>,</div>
+<div class="line">    <span class="charliteral">&#39;\\&#39;</span>,</div>
+<div class="line">    0</div>
+<div class="line">}</div>
+</div><!-- fragment -->
+<p>служебный массив символов, имеющих значение операций </p>
+
+</div>
+</div>
+<hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<li><a class="el" href="lexic_8h_source.html">lexic.h</a></li>
+<li><a class="el" href="lexic_8cpp.html">lexic.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_lex.html">Lex</a></li>
+    <li class="footer">Документация по mygrep. Последние изменения: Ср 18 Май 2016 04:38:17. Создано системой
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
+  </ul>
+</div>
+</body>
+</html>

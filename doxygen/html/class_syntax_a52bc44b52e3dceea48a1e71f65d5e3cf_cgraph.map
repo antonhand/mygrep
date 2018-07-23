@@ -1,0 +1,7 @@
+<map id="Syntax::Syntax" name="Syntax::Syntax">
+<area shape="rect" id="node2" href="$class_syntax.html#a5139d8fddfa05e199bf12b8ef7bd3620" title="Функция, получающая из лексического анализатора очередную лексему и записывающая её в переменную cur..." alt="" coords="557,31,639,57"/>
+<area shape="rect" id="node4" href="$class_syntax.html#af5d09263aadaa0b9a264ebf436beb9e8" title="Начальное состояние " alt="" coords="165,31,245,57"/>
+<area shape="rect" id="node3" href="$class_lex.html#a38b6e95d1a98fd656ee932d34018a0aa" title="Функция, последовательно возвращающая лексемы " alt="" coords="687,31,780,57"/>
+<area shape="rect" id="node5" href="$class_syntax.html#ad3bf45fadc4d20146f0a6c85d970d714" title="Основное состояние " alt="" coords="293,31,380,57"/>
+<area shape="rect" id="node6" href="$class_syntax.html#a4ed2d9c690da119299e6e74fc9332f16" title="Состояние поиска унарного оператора " alt="" coords="428,81,509,108"/>
+</map>

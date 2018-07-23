@@ -1,0 +1,368 @@
+\hypertarget{class_mygrep}{}\subsection{Класс Mygrep}
+\label{class_mygrep}\index{Mygrep@{Mygrep}}
+
+
+Обработчик регулярных выражений  
+
+
+
+
+{\ttfamily \#include $<$mygrep.\+h$>$}
+
+\subsubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_mygrep_aa2d9dfde7904f2232e6327249f4cd295}{Mygrep} (const string \&reg)
+\begin{DoxyCompactList}\small\item\em Конструктор от строки с регулярным выражением. \end{DoxyCompactList}\item 
+bool \hyperlink{class_mygrep_a17b4256c97b2e7e875d50bdc9985ef51}{check} (const string \&s, bool forsearch=false)
+\begin{DoxyCompactList}\small\item\em Функция сравнения с регулярным выражением \end{DoxyCompactList}\item 
+bool \hyperlink{class_mygrep_a684ae4e33ce76c8de17b5eadf987afe9}{check} (vector$<$ \hyperlink{class_syn__lexem}{Syn\+\_\+lexem} $>$ \&v)
+\begin{DoxyCompactList}\small\item\em Функция проверки подвыражения \end{DoxyCompactList}\item 
+string \hyperlink{class_mygrep_a3e4671ac445156bbbcd4f685d61871a5}{search} (const string \&s)
+\begin{DoxyCompactList}\small\item\em Функция поиска подстроки, соответствующей регулярному выражению \end{DoxyCompactList}\item 
+bool \hyperlink{class_mygrep_abd79a246feab0fe7548c79b9d887803d}{check\+\_\+next} ()
+\begin{DoxyCompactList}\small\item\em Проверка следующего \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Закрытые типы}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_mygrep_ab095dfb9624dcc11dc8b51399d15f429}{}typedef vector$<$ \hyperlink{class_syn__lexem}{Syn\+\_\+lexem} $>$\+::iterator \hyperlink{class_mygrep_ab095dfb9624dcc11dc8b51399d15f429}{intern\+\_\+iterator}\label{class_mygrep_ab095dfb9624dcc11dc8b51399d15f429}
+
+\begin{DoxyCompactList}\small\item\em Итератор, указывающий на текущее положение во внутреннем представлении \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Закрытые члены}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{class_mygrep_ac4293787424bbfe7be6d2585a5f40e9f}{selector} ()
+\begin{DoxyCompactList}\small\item\em Функция выбора операции \end{DoxyCompactList}\item 
+\hyperlink{class_mygrep_ae2ead57bb55a8e3625401169a9b693a7}{Mygrep} (vector$<$ \hyperlink{class_syn__lexem}{Syn\+\_\+lexem} $>$ \&v)
+\begin{DoxyCompactList}\small\item\em Конструктор от вектора лексем \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{Indent}{\bf Функции-\/обработчики операций}\par
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_mygrep_ad893ffcdb0252a2724e5679bf24eeff7}{iter} (bool lazy=false)
+\begin{DoxyCompactList}\small\item\em Итерация \end{DoxyCompactList}\item 
+bool \hyperlink{class_mygrep_ac52eb295fdae462e39016b0e69bd75bc}{iter\+\_\+n\+\_\+m} (int n, int m)
+\begin{DoxyCompactList}\small\item\em Итерация от n до m раз \end{DoxyCompactList}\item 
+bool \hyperlink{class_mygrep_a0e3ee4dc08c04520c4b2af313cf6f9a3}{terminal} ()
+\begin{DoxyCompactList}\small\item\em Терминал \end{DoxyCompactList}\item 
+bool \hyperlink{class_mygrep_a43b5b9e7e2d0ccbee7f5ec0115f53952}{alternate} ()
+\begin{DoxyCompactList}\small\item\em Перечисление \end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+\subsubsection*{Закрытые данные}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_mygrep_ae33c6f986c7fdcc1a92a4fe041a333b8}{}vector$<$ \hyperlink{class_syn__lexem}{Syn\+\_\+lexem} $>$ \hyperlink{class_mygrep_ae33c6f986c7fdcc1a92a4fe041a333b8}{internal}\label{class_mygrep_ae33c6f986c7fdcc1a92a4fe041a333b8}
+
+\begin{DoxyCompactList}\small\item\em Внутреннее представление регулярного выражения \end{DoxyCompactList}\item 
+\hypertarget{class_mygrep_a7109fb756258cb50b8c3920a55ff6b80}{}\hyperlink{class_mygrep_ab095dfb9624dcc11dc8b51399d15f429}{intern\+\_\+iterator} \hyperlink{class_mygrep_a7109fb756258cb50b8c3920a55ff6b80}{internal\+\_\+it}\label{class_mygrep_a7109fb756258cb50b8c3920a55ff6b80}
+
+\begin{DoxyCompactList}\small\item\em Итератор текущего положения в регулярном выражении \end{DoxyCompactList}\item 
+\hypertarget{class_mygrep_a116ceb6b78f1ea12fb5ba0b0d00dedd7}{}string \hyperlink{class_mygrep_a116ceb6b78f1ea12fb5ba0b0d00dedd7}{inp}\label{class_mygrep_a116ceb6b78f1ea12fb5ba0b0d00dedd7}
+
+\begin{DoxyCompactList}\small\item\em Входная строка \end{DoxyCompactList}\item 
+\hypertarget{class_mygrep_a218804650aa95ac793b34d444821033b}{}size\+\_\+t \hyperlink{class_mygrep_a218804650aa95ac793b34d444821033b}{inp\+\_\+pos} = 0\label{class_mygrep_a218804650aa95ac793b34d444821033b}
+
+\begin{DoxyCompactList}\small\item\em Позиция во входной строке \end{DoxyCompactList}\item 
+\hypertarget{class_mygrep_a15c0407904f221e633c756c2f0c4d454}{}vector$<$ \hyperlink{class_syn__lexem}{Syn\+\_\+lexem} $>$ \hyperlink{class_mygrep_a15c0407904f221e633c756c2f0c4d454}{v\+\_\+next}\label{class_mygrep_a15c0407904f221e633c756c2f0c4d454}
+
+\begin{DoxyCompactList}\small\item\em Вектор синтаксических лексем, следующих за текущей проверяемой лексемой \end{DoxyCompactList}\item 
+\hypertarget{class_mygrep_a56163b4ca84bd60abedf506b916a3b58}{}bool \hyperlink{class_mygrep_a56163b4ca84bd60abedf506b916a3b58}{issearch} = false\label{class_mygrep_a56163b4ca84bd60abedf506b916a3b58}
+
+\begin{DoxyCompactList}\small\item\em Признак режима работы\+: сравнение или поиск подстроки \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsubsection{Подробное описание}
+Обработчик регулярных выражений 
+
+Проверяет строки на соответствие регулярному выражению либо ищет первое вхождение подстроки, удовлетворяющей регулярному выражению 
+
+\subsubsection{Конструктор(ы)}
+\hypertarget{class_mygrep_ae2ead57bb55a8e3625401169a9b693a7}{}\index{Mygrep@{Mygrep}!Mygrep@{Mygrep}}
+\index{Mygrep@{Mygrep}!Mygrep@{Mygrep}}
+\paragraph[{Mygrep(vector$<$ Syn\+\_\+lexem $>$ \&v)}]{\setlength{\rightskip}{0pt plus 5cm}Mygrep\+::\+Mygrep (
+\begin{DoxyParamCaption}
+\item[{vector$<$ {\bf Syn\+\_\+lexem} $>$ \&}]{v}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{class_mygrep_ae2ead57bb55a8e3625401169a9b693a7}
+
+
+Конструктор от вектора лексем 
+
+Сделан явным, поскольку неясен смысл выражения вида \hyperlink{class_mygrep}{Mygrep} c = \char`\"{}a$\ast$\char`\"{}; \hypertarget{class_mygrep_aa2d9dfde7904f2232e6327249f4cd295}{}\index{Mygrep@{Mygrep}!Mygrep@{Mygrep}}
+\index{Mygrep@{Mygrep}!Mygrep@{Mygrep}}
+\paragraph[{Mygrep(const string \&reg)}]{\setlength{\rightskip}{0pt plus 5cm}Mygrep\+::\+Mygrep (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{reg}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [explicit]}}\label{class_mygrep_aa2d9dfde7904f2232e6327249f4cd295}
+
+
+Конструктор от строки с регулярным выражением. 
+
+Сделан явным, поскольку неясен смысл выражения вида \hyperlink{class_mygrep}{Mygrep} c = \char`\"{}a$\ast$\char`\"{}; 
+
+Граф вызовов\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=307pt]{class_mygrep_aa2d9dfde7904f2232e6327249f4cd295_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsubsection{Методы}
+\hypertarget{class_mygrep_a43b5b9e7e2d0ccbee7f5ec0115f53952}{}\index{Mygrep@{Mygrep}!alternate@{alternate}}
+\index{alternate@{alternate}!Mygrep@{Mygrep}}
+\paragraph[{alternate()}]{\setlength{\rightskip}{0pt plus 5cm}bool Mygrep\+::alternate (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{class_mygrep_a43b5b9e7e2d0ccbee7f5ec0115f53952}
+
+
+Перечисление 
+
+Выполняет проверку соответствия входной строки одному из двух выражений-\/операндов \begin{DoxyReturn}{Возвращает}
+true, если соответствует одному из выражений, false, если ни одному из выражений не соответствует 
+\end{DoxyReturn}
+
+
+Граф вызовов\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_mygrep_a43b5b9e7e2d0ccbee7f5ec0115f53952_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_mygrep_a17b4256c97b2e7e875d50bdc9985ef51}{}\index{Mygrep@{Mygrep}!check@{check}}
+\index{check@{check}!Mygrep@{Mygrep}}
+\paragraph[{check(const string \&s, bool forsearch=false)}]{\setlength{\rightskip}{0pt plus 5cm}bool Mygrep\+::check (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{s, }
+\item[{bool}]{forsearch = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}\label{class_mygrep_a17b4256c97b2e7e875d50bdc9985ef51}
+
+
+Функция сравнения с регулярным выражением 
+
+Проверяет, соответствует ли строка регулярному выражению
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\tt in}  & {\em s} & Строка для проверки \\
+\hline
+\mbox{\tt in}  & {\em forsearch} & Признак того, что проверка выполняется для функции search \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+true, если строка соответствует регулярному выражению, false — иначе 
+\end{DoxyReturn}
+
+
+Граф вызовов\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_mygrep_a17b4256c97b2e7e875d50bdc9985ef51_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_mygrep_a684ae4e33ce76c8de17b5eadf987afe9}{}\index{Mygrep@{Mygrep}!check@{check}}
+\index{check@{check}!Mygrep@{Mygrep}}
+\paragraph[{check(vector$<$ Syn\+\_\+lexem $>$ \&v)}]{\setlength{\rightskip}{0pt plus 5cm}bool Mygrep\+::check (
+\begin{DoxyParamCaption}
+\item[{vector$<$ {\bf Syn\+\_\+lexem} $>$ \&}]{v}
+\end{DoxyParamCaption}
+)}\label{class_mygrep_a684ae4e33ce76c8de17b5eadf987afe9}
+
+
+Функция проверки подвыражения 
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\tt in}  & {\em v} & Вектор лексем для проверки \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+true, если строка соответствует регулярному выражению, false — иначе 
+\end{DoxyReturn}
+
+
+Граф вызовов\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_mygrep_a684ae4e33ce76c8de17b5eadf987afe9_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_mygrep_abd79a246feab0fe7548c79b9d887803d}{}\index{Mygrep@{Mygrep}!check\+\_\+next@{check\+\_\+next}}
+\index{check\+\_\+next@{check\+\_\+next}!Mygrep@{Mygrep}}
+\paragraph[{check\+\_\+next()}]{\setlength{\rightskip}{0pt plus 5cm}bool Mygrep\+::check\+\_\+next (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_mygrep_abd79a246feab0fe7548c79b9d887803d}
+
+
+Проверка следующего 
+
+\begin{DoxyReturn}{Возвращает}
+true, если строка соответствует следующим лексемам, false — иначе 
+\end{DoxyReturn}
+
+
+Граф вызовов\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_mygrep_abd79a246feab0fe7548c79b9d887803d_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_mygrep_ad893ffcdb0252a2724e5679bf24eeff7}{}\index{Mygrep@{Mygrep}!iter@{iter}}
+\index{iter@{iter}!Mygrep@{Mygrep}}
+\paragraph[{iter(bool lazy=false)}]{\setlength{\rightskip}{0pt plus 5cm}void Mygrep\+::iter (
+\begin{DoxyParamCaption}
+\item[{bool}]{lazy = {\ttfamily false}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{class_mygrep_ad893ffcdb0252a2724e5679bf24eeff7}
+
+
+Итерация 
+
+Выполняет итерирацию выражения. В режими поиска подстроки выбирает вариант наибольшего количества итераций 
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\tt in}  & {\em lazy} & Признок ленивости иттерации \\
+\hline
+\end{DoxyParams}
+
+
+Граф вызовов\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_mygrep_ad893ffcdb0252a2724e5679bf24eeff7_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_mygrep_ac52eb295fdae462e39016b0e69bd75bc}{}\index{Mygrep@{Mygrep}!iter\+\_\+n\+\_\+m@{iter\+\_\+n\+\_\+m}}
+\index{iter\+\_\+n\+\_\+m@{iter\+\_\+n\+\_\+m}!Mygrep@{Mygrep}}
+\paragraph[{iter\+\_\+n\+\_\+m(int n, int m)}]{\setlength{\rightskip}{0pt plus 5cm}bool Mygrep\+::iter\+\_\+n\+\_\+m (
+\begin{DoxyParamCaption}
+\item[{int}]{n, }
+\item[{int}]{m}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{class_mygrep_ac52eb295fdae462e39016b0e69bd75bc}
+
+
+Итерация от n до m раз 
+
+Выполняет проверку наличия выражения n раз и выполняет итерацию дополнительно до, возможно, m-\/того раза \begin{DoxyReturn}{Возвращает}
+true, если выражение повторяется хотя бы n раз, false — иначе 
+\end{DoxyReturn}
+
+
+Граф вызовов\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_mygrep_ac52eb295fdae462e39016b0e69bd75bc_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_mygrep_a3e4671ac445156bbbcd4f685d61871a5}{}\index{Mygrep@{Mygrep}!search@{search}}
+\index{search@{search}!Mygrep@{Mygrep}}
+\paragraph[{search(const string \&s)}]{\setlength{\rightskip}{0pt plus 5cm}string Mygrep\+::search (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{s}
+\end{DoxyParamCaption}
+)}\label{class_mygrep_a3e4671ac445156bbbcd4f685d61871a5}
+
+
+Функция поиска подстроки, соответствующей регулярному выражению 
+
+Ищет первое вхождение подстроки, соответствующей регулярному выражению
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\tt in}  & {\em s} & Строка для поиска \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Возвращает подстроку, соответствующую регулярному выражению, либо \char`\"{} \char`\"{} (пробел), если подстрока не найдена 
+\end{DoxyReturn}
+
+
+Граф вызовов\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_mygrep_a3e4671ac445156bbbcd4f685d61871a5_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_mygrep_ac4293787424bbfe7be6d2585a5f40e9f}{}\index{Mygrep@{Mygrep}!selector@{selector}}
+\index{selector@{selector}!Mygrep@{Mygrep}}
+\paragraph[{selector()}]{\setlength{\rightskip}{0pt plus 5cm}bool Mygrep\+::selector (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{class_mygrep_ac4293787424bbfe7be6d2585a5f40e9f}
+
+
+Функция выбора операции 
+
+Вызывает функцию, соответствующую текущей лексеме \begin{DoxyReturn}{Возвращает}
+Возвращает значение вызванной ей функции либо true, если вызывалась неограниченная итерация 
+\end{DoxyReturn}
+
+
+Граф вызовов\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_mygrep_ac4293787424bbfe7be6d2585a5f40e9f_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_mygrep_a0e3ee4dc08c04520c4b2af313cf6f9a3}{}\index{Mygrep@{Mygrep}!terminal@{terminal}}
+\index{terminal@{terminal}!Mygrep@{Mygrep}}
+\paragraph[{terminal()}]{\setlength{\rightskip}{0pt plus 5cm}bool Mygrep\+::terminal (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{class_mygrep_a0e3ee4dc08c04520c4b2af313cf6f9a3}
+
+
+Терминал 
+
+Выполняет проверку наличия необходимой терминальной последовательности на позиции входной строки, анализируемой в данный момент \begin{DoxyReturn}{Возвращает}
+true, если терминальная последовательность обнаружена, false — иначе 
+\end{DoxyReturn}
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{mygrep_8h}{mygrep.\+h}\item 
+\hyperlink{mygrep_8cpp}{mygrep.\+cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,5 @@
+<map id="Syntax::S1" name="Syntax::S1">
+<area shape="rect" id="node2" href="$class_syntax.html#a5139d8fddfa05e199bf12b8ef7bd3620" title="Функция, получающая из лексического анализатора очередную лексему и записывающая её в переменную cur..." alt="" coords="269,5,351,32"/>
+<area shape="rect" id="node4" href="$class_syntax.html#a4ed2d9c690da119299e6e74fc9332f16" title="Состояние поиска унарного оператора " alt="" coords="140,31,221,57"/>
+<area shape="rect" id="node3" href="$class_lex.html#a38b6e95d1a98fd656ee932d34018a0aa" title="Функция, последовательно возвращающая лексемы " alt="" coords="399,5,492,32"/>
+</map>
